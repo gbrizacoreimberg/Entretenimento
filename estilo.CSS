@@ -1,0 +1,134 @@
+/* Configurações gerais da página */
+body {
+    background-color: #151321;
+    color: #f5f0ff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título principal */
+#titulo-principal {
+    text-align: center;
+    color: #c084fc;
+    font-size: 42px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+/* Subtítulo */
+h2 {
+    text-align: center;
+    color: #d8b4fe;
+    margin-bottom: 35px;
+}
+
+/* Área que contém todas as seções */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Estilização dos cartões de conteúdo */
+.secao-filmes,
+.secao-jogos,
+.secao-musica {
+    background-color: #231e35;
+    border: 1px solid #493568;
+    border-radius: 15px;
+    padding: 25px;
+    width: 350px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Títulos das seções */
+.secao-filmes h3,
+.secao-jogos h3,
+.secao-musica h2 {
+    color: #c084fc;
+    text-align: center;
+    border-bottom: 2px solid #8b5cf6;
+    padding-bottom: 12px;
+    margin-top: 0;
+}
+
+/* Títulos dos filmes, jogos e músicas */
+h4 {
+    color: #f0abfc;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+/* Imagens */
+img {
+    display: block;
+    max-width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+/* Parágrafos */
+p {
+    color: #d1c8df;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Links */
+a {
+    display: inline-block;
+    color: #c084fc;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 5px 5px 5px 0;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse nos links */
+a:hover {
+    color: #f0abfc;
+    text-decoration: underline;
+}
+
+/* Efeito ao passar o mouse nos cartões */
+.secao-filmes:hover,
+.secao-jogos:hover,
+.secao-musica:hover {
+    border-color: #c084fc;
+    transition: 0.3s;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    #titulo-principal {
+        font-size: 32px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-filmes,
+    .secao-jogos,
+    .secao-musica {
+        width: 100%;
+        max-width: 450px;
+    }
+}

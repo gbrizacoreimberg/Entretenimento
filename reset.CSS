@@ -1,0 +1,27 @@
+/* Remove margens e espaçamentos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Remove marcadores das listas */
+ul, ol {
+    list-style: none;
+}
+
+/* Padroniza imagens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Faz elementos de formulário herdarem a fonte */
+button, input, textarea, select {
+    font: inherit;
+}
